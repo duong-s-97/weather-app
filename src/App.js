@@ -22,6 +22,7 @@ function App() {
 
   useEffect(() => {
     mutationGetlocation("hanoi");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleChangeInput = (event) => {
