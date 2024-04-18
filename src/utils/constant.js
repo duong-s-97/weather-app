@@ -1,1 +1,1 @@
-export const baseApi = "http://api.openweathermap.org/";
+export const baseApi = "https://api.openweathermap.org/";
