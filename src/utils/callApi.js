@@ -1,7 +1,7 @@
 import { getApiDefault } from "./api";
 
 export async function getWeatherDetails(data) {
-  const url = `data/2.5/weather?lat=${data?.lat}&lon=${data?.lon}&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+  const url = `data/2.5/weather?lat=${data?.lat}&lon=${data?.lon}&appid=725868c3aaf1274a6d419daf418a58b8&units=metric`;
   try {
     const res = await getApiDefault(url);
     if (res && res?.status === 200) {
@@ -13,7 +13,7 @@ export async function getWeatherDetails(data) {
 }
 
 export async function getWeatherForecast(data) {
-  const url = `data/2.5/forecast?lat=${data?.lat}&lon=${data?.lon}&limit=5&appid=${process.env.REACT_APP_API_KEY}&units=metric&cnt=16`;
+  const url = `data/2.5/forecast?lat=${data?.lat}&lon=${data?.lon}&limit=5&appid=725868c3aaf1274a6d419daf418a58b8&units=metric&cnt=16`;
   try {
     const res = await getApiDefault(url);
     if (res && res?.status === 200) {
@@ -25,7 +25,7 @@ export async function getWeatherForecast(data) {
 }
 
 export async function getLocation(location) {
-  const url = `geo/1.0/direct?q=${location}&appid=${process.env.REACT_APP_API_KEY}`;
+  const url = `geo/1.0/direct?q=${location}&appid=725868c3aaf1274a6d419daf418a58b8`;
   try {
     const res = await getApiDefault(url);
     if (res && res?.status === 200) {
